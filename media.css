@@ -1,0 +1,47 @@
+@media only screen and (min-width:200px) and (max-width:567px){
+	.content {
+    grid-template-columns: 100%;
+}
+.support {
+    flex-direction: row-reverse;
+}
+.headerMid {
+ }
+ .headerL{
+ 	
+    flex-basis: 10%;
+ }
+ .headerL a{
+ 	width: 20px;
+ 	height: 20px;
+ }
+ .headerL i{
+ 	font-size: 12px;
+ }
+ .search{
+ 	padding: 0px;
+ }
+ .search input {
+    font-size: 10px;
+}
+.search i {
+    font-size: 10px;
+}
+.support{
+	display: none;
+}
+.searchMid{
+	display: flex;
+}
+.searchMid span{
+	display: flex;
+}
+.headerL>a {
+  
+    font-size: 0px;
+    padding: 2px;
+ 
+ }
+ .company {
+    flex-direction: column;
+}
