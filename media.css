@@ -1,47 +1,213 @@
-@media only screen and (min-width:200px) and (max-width:567px){
-	.content {
-    grid-template-columns: 100%;
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .headerMid {
+        gap: 12px;
+    }
+
+    .headerR .support {
+        gap: 10px;
+    }
+
+    .headerR .support > a {
+        font-size: 12px;
+    }
+
+    aside {
+        width: 230px;
+    }
+
+    .song {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .company {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
-.support {
-    flex-direction: row-reverse;
+
+/* Mobile */
+@media (max-width: 768px) {
+    header {
+        padding: 8px 10px;
+    }
+
+    .headerMid {
+        gap: 10px;
+    }
+
+    .headerMid figure img {
+        width: 32px;
+    }
+
+    .headerL {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .headerL > a {
+        display: none;
+    }
+
+    .search {
+        padding: 11px;
+        gap: 8px;
+    }
+
+    .searchMid {
+        gap: 7px;
+    }
+
+    .searchMid input {
+        font-size: 12px;
+    }
+
+    .searchMid:last-child {
+        display: none;
+    }
+
+    .headerR .support {
+        gap: 0;
+    }
+
+    .headerR .support > a,
+    .headerR .support hr,
+    .headerR .support span > a {
+        display: none;
+    }
+
+    .headerR button {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    .content {
+        display: block;
+        height: calc(100vh - 65px);
+        min-height: 0;
+        padding: 0 6px;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .trending {
+        width: 100%;
+        height: 100%;
+        padding: 12px;
+        border-radius: 8px;
+    }
+
+    .trendingMid {
+        margin: 16px 0;
+    }
+
+    .trendingMid h2 {
+        font-size: 19px;
+    }
+
+    .trendingMid button {
+        font-size: 12px;
+    }
+
+    .song {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .songMid {
+        padding: 7px;
+    }
+
+    .songMid nav {
+        padding-top: 7px;
+    }
+
+    .songMid h3 {
+        font-size: 13px;
+    }
+
+    .songMid p {
+        font-size: 11px;
+    }
+
+    .company {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px 15px;
+    }
+
+    .companyMid h3 {
+        font-size: 14px;
+    }
+
+    .companyMid a {
+        font-size: 12px;
+    }
+
+    .companyMid .icon {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .companyMid .icon i {
+        padding: 6px;
+    }
+
+    .backToTop {
+        width: 42px;
+        height: 42px;
+        right: 14px;
+        bottom: 15px;
+        font-size: 18px;
+    }
 }
-.headerMid {
- }
- .headerL{
- 	
-    flex-basis: 10%;
- }
- .headerL a{
- 	width: 20px;
- 	height: 20px;
- }
- .headerL i{
- 	font-size: 12px;
- }
- .search{
- 	padding: 0px;
- }
- .search input {
-    font-size: 10px;
-}
-.search i {
-    font-size: 10px;
-}
-.support{
-	display: none;
-}
-.searchMid{
-	display: flex;
-}
-.searchMid span{
-	display: flex;
-}
-.headerL>a {
-  
-    font-size: 0px;
-    padding: 2px;
- 
- }
- .company {
-    flex-direction: column;
+
+/* Small phones */
+@media (max-width: 380px) {
+    .headerMid {
+        gap: 7px;
+    }
+
+    .headerMid figure img {
+        width: 27px;
+    }
+
+    .search {
+        padding: 9px;
+    }
+
+    .searchMid input {
+        font-size: 11px;
+    }
+
+    .headerR button {
+        padding: 9px 11px;
+        font-size: 11px;
+    }
+
+    .trending {
+        padding: 9px;
+    }
+
+    .trendingMid h2 {
+        font-size: 16px;
+    }
+
+    .song {
+        gap: 8px;
+    }
+
+    .songMid {
+        padding: 5px;
+    }
+
+    .songMid h3 {
+        font-size: 12px;
+    }
+
+    .company {
+        gap: 20px 10px;
+    }
 }
